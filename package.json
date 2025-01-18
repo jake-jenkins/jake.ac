@@ -1,6 +1,6 @@
 {
-  "name": "jake1.net",
-  "version": "3.1.0",
+  "name": "jake.ac",
+  "version": "3.1.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,15 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^15.0.3",
+    "next": "^15.1.5",
     "next-mdx-remote": "^5.0.0"
   },
   "overrides": {
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028"
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^22",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
@@ -27,6 +27,6 @@
     "typescript": "^5"
   },
   "engines": {
-    "node": "20"
+    "node": "22"
   }
 }
