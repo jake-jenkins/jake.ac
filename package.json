@@ -1,0 +1,27 @@
+{
+  "name": "jake.ac",
+  "version": "3.1.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && node copy-assets.js",
+    "start": "node .next/standalone/server.js",
+    "lint": "next lint",
+    "proxy": "local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
+  },
+  "dependencies": {
+    "@storyblok/react": "^4.0.0",
+    "local-ssl-proxy": "^2.0.5",
+    "next": "^15.1.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.2",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
