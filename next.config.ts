@@ -9,6 +9,19 @@ const nextConfig: NextConfig = {
                 hostname: "a.storyblok.com"
             }
         ]
+    },
+    async headers() {
+        return [
+            {
+                source: "/(.*)",
+                headers: [
+                    {
+                        key: "X-Frame-Options",
+                        value: "SAMEORIGIN"
+                    }
+                ]
+            }
+        ];
     }
 };
 
