@@ -22,7 +22,7 @@ const nextConfig: NextConfig = {
                     },
                     {
                         key: "Content-Security-Policy",
-                        value: "default-src 'self'; connect-src 'self'; script-src 'strict-dynamic'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; frame-src 'self'; upgrade-insecure-requests;"
+                        value: "default-src 'self'; connect-src 'self'; script-src 'self' 'strict-dynamic'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; frame-src 'self'; upgrade-insecure-requests;"
                     },
                     {
                         key: "Cross-Origin-Resource-Policy",
