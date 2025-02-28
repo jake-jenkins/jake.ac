@@ -13,12 +13,6 @@ export function middleware(request: NextRequest) {
     form-action 'self';
     frame-ancestors 'none';
     upgrade-insecure-requests;
-    access-control-allow-origin 'self';
-    referrer-policy 'strict-origin-when-cross-origin';
-    x-frame-options 'DENY';
-    x-content-type-options 'nosniff';
-    x-xss-protection '1; mode=block';
-    strict-transport-security 'max-age=31536000; includeSubDomains; preload';
 `
   // Replace newline characters and spaces
   const contentSecurityPolicyHeaderValue = cspHeader
