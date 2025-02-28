@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
     output: "standalone",
+    poweredByHeader: false,
     images: {
         remotePatterns: [
             {
@@ -46,6 +47,10 @@ const nextConfig: NextConfig = {
                     {
                         key: "X-XSS-Protection",
                         value: "1; mode=block"
+                    },
+                    {
+                        key: "Strict-Transport-Security",
+                        value: "max-age=31536000; includeSubDomains; preload"
                     }
                 ]
             }
